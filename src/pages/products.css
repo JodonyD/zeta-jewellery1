@@ -1,0 +1,51 @@
+/* Custom styles to enhance Bootstrap */
+.card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-top img {
+  transition: transform 0.3s ease;
+}
+
+.card-img-top:hover img {
+  transform: scale(1.05);
+}
+
+/* Navigation buttons */
+.btn-dark {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+}
+
+.btn-dark:hover {
+  opacity: 1 !important;
+}
+
+/* Lightbox styling */
+.position-fixed.top-0 {
+  backdrop-filter: blur(5px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .btn-dark {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+  
+  .display-4 {
+    font-size: 2rem;
+  }
+}
